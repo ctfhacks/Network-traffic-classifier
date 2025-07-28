@@ -106,14 +106,16 @@ For each model (except for KMEANS) precision, recall and F1-Score (metric that r
 
 ### 7. Applying the best model obtained to classify the obtained data using the Traffic Capture Tool
 `trained_traffic_classifier.keras`, `scaler.pkl` and `imputer.pkl` are uploaded in the `classifier.py` script to be applied to the obtained datasets.
-
+```bash
+python3 classifier.py
+```
 
 ## Authors and Contributions
 
 This project is a collaboration between two developers combining machine learning with real-time network traffic analysis:
 
 - [@mrcsgh](https://github.com/mrcsgh)  
-  Responsible for developing, training, and validating the **machine learning model** used to classify network traffic based on the CIC-DDoS2019 dataset.
+  Responsible for developing, training, and validating the **machine learning model** used to classify network traffic based on the [CIC-DDoS2019](https://www.kaggle.com/datasets/aymenabb/ddos-evaluation-dataset-cic-ddos2019) dataset, and integrating AI with network traffic capture.
 
 - [@ctfhacks](https://github.com/ctfhacks)  
   Developed the Python-based system for **real-time network traffic capture**, data extraction, CSV generation, and integration with the AI model for detection.
